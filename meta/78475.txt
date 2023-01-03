@@ -1,0 +1,85 @@
+<div style="letter-spacing: 0"><table>
+<tr>
+<td>Автор</td>
+<td class="value">М. А. Зенкевич</td>
+</tr>
+<tr>
+<td>Название</td>
+<td class="value">Удавочка, «Эй, други, нынче в оба...»</td>
+</tr>
+<tr>
+<td>Дата создания</td>
+<td class="value">1913</td>
+</tr>
+<tr>
+<td>Сфера функционирования</td>
+<td class="value">художественная</td>
+</tr>
+<tr>
+<td>Жанр художественной литературы</td>
+<td class="value">стихотворение</td>
+</tr>
+<tr>
+<td>Предложений</td>
+<td class="value">13</td>
+</tr>
+<tr>
+<td>Словоформ</td>
+<td class="value">132</td>
+</tr>
+<tr>
+<td>Книга</td>
+<td class="value">Под мясной багряницей (1922)</td>
+</tr>
+<tr>
+<td>Метр</td>
+<td class="value">Я</td>
+</tr>
+<tr>
+<td>Длина строки</td>
+<td class="value">3</td>
+</tr>
+<tr>
+<td>Клаузула</td>
+<td class="value">регулярная, жм</td>
+</tr>
+<tr>
+<td>Метрическая формула</td>
+<td class="value">Я3жм</td>
+</tr>
+<tr>
+<td>Рифма</td>
+<td class="value">перекрестная, абаб</td>
+</tr>
+<tr>
+<td>Строфика</td>
+<td class="value">4</td>
+</tr>
+<tr>
+<td>Число строк</td>
+<td class="value">36</td>
+</tr>
+<tr>
+<td>Уровень образования аудитории</td>
+<td class="value">н-уровень</td>
+</tr>
+<tr>
+<td>Размер аудитории</td>
+<td class="value">большая</td>
+</tr>
+<tr>
+<td>Источник</td>
+<td class="value">М. Зенкевич. Сказочная эра. М.: Школа-пресс, 1994</td>
+</tr>
+<tr>
+<td>Подкорпус</td>
+<td class="value">поэтический</td>
+</tr>
+</table></div><br><div style="letter-spacing: 0">
+<div id="bug-reporter-caption" align="right"><a class="bug-reporter-caption" onclick="javascript:showBugReporter();">Сообщить об ошибке...</a></div>
+<form style="display:none" id="bug-reporter-form"><table>
+<tr><td>Сообщение об ошибке:</td></tr>
+<tr><td><textarea onkeypress="return (value.length &lt;=200);" cols="30" rows="3" id="bug-comment" class="bug-reporter-form"></textarea></td></tr>
+<tr><td><div align="right"><input type="button" id="bug-apply" class="bug-reporter-button" value="Отправить" onclick="bugReport();"></div></td></tr>
+</table></form>
+</div>

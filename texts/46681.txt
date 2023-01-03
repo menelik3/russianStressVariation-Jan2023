@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1251"><header xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:x="http://www.yandex.ru/xscript">
+    <title>Национальный корпус русского языка</title>
+    <link rel="shortcut icon" href="http://ruscorpora.ru/favicon.ico">
+  </header><link rel="stylesheet" type="text/css" href="common.css"><script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="common.js"></script></head><body><script type="text/javascript">
+(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter2226223 = new Ya.Metrika({id:2226223,
+                    clickmap:true,
+                    trackLinks:true});
+        } catch(e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+})(document, window, "yandex_metrika_callbacks");
+</script><noscript><div><img src="//mc.yandex.ru/watch/2226223" style="position:absolute; left:-9999px;" alt=""></div></noscript><div class="hat"><div class="logo"><logo xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:x="http://www.yandex.ru/xscript">
+    <a href="http://ruscorpora.ru/">
+      <img src="i/logo.gif">
+    </a>
+  </logo></div></div><div class="line"><img alt="line under logo" src="i/bottom_logo.gif" width="169" height="9"><br></div><div class="content"><h1 class="alt">Национальный корпус русского языка</h1><div class="set"><a onclick="openSettings();">настройки</a><a href="/search.xml?nodia=1&amp;env=alpha&amp;mode=poetic&amp;expand=full&amp;docid=46681&amp;sid=0">версия без ударений</a><a href="http://ruscorpora.ru/mycorpora-poetic.html">выбрать подкорпус</a><a href="http://ruscorpora.ru/search-poetic.html">перейти на страницу поиска</a></div><script>
+      var settings = {
+      dpp : 10,
+      spd : 10,
+      spp : 50,
+      kwsz : 5,
+      mode : "poetic",
+      saveOnDiskMessage : ""
+      }
+    </script><div id="blocker"><br></div><div id="search-form"><a onclick="closeSettings ();" class="close"> x </a><form name="search_sort" method="get" action="search.xml"><p>Упорядочить:
+    </p><select id="settings-sort-select" name="sort" onchange="setRangesBySort(this.options[this.selectedIndex].value)"><option value="gr_tagging">по умолчанию</option><option value="random">случайно</option><option value="cont2">по правому контексту</option><option value="cont1">по правому контексту, учитывая форму искомого слова</option><option value="cont-2">по левому контексту</option><option value="cont-1">по левому контексту, учитывая форму искомого слова</option><option value="gr_author">по автору</option><option value="gr_created">по дате создания</option><option value="gr_created_inv">по дате создания в обратном порядке</option><option value="gr_birthday">по дате рождения автора</option><option value="gr_birthday_inv">по дате рождения автора в обратном порядке</option></select><br><br><p>Формат выдачи:
+    </p><select id="settings-output-select" name="out" onchange="setRangesByOutput(this.options[this.selectedIndex].value)"><option value="normal">обычный</option><option value="kwic">KWIC (key word in context)</option></select><br><br><p>Показывать:
+    </p><table class="settings" border="0"><tr><td><input id="settings-kwsz" name="kwsz" type="text" maxsize="4" value="5"></td><td><span id="settings-kwsz-caption">слов в контексте KWIC-выдачи</span></td></tr><tr><td><input id="settings-dpp" name="dpp" type="text" maxsize="4" value="10"></td><td><span id="settings-dpp-caption">документов на странице</span></td></tr><tr><td><input id="settings-spd" name="spd" type="text" maxsize="4" value="10"></td><td><span id="settings-spd-caption">примеров в документе</span></td></tr><tr><td><input id="settings-spp" name="spp" type="text" maxsize="4" value="50"></td><td><span id="settings-spp-caption">примеров на странице</span></td></tr></table><br><br><input type="hidden" id="seed" name="seed" value=""><input type="hidden" name="env" value="alpha"><input type="hidden" name="mode" value="poetic"><input type="hidden" name="expand" value="full"><input type="hidden" name="docid" value="46681"><input type="hidden" name="sid" value="0"><input type="submit" value="Применить" onclick="closeSettings();">   
+        <input type="button" value="Восстановить исходные значения" onclick="setDefaults();"></form></div><br clear="all"><span class="snippet-title"><span class="b-doc-expl" explain="46681">Н. С. Гумилев. В день рожденья Мика (1918)</span></span><p><ul><li><li>  <span class="b-wrd-expl" explain="%D0%92%7C13%7C13%7C0%7C1%7C1%7C1%7C1">В</span> <span class="b-wrd-expl" explain="%D0%94%D0%95%D0%9D%D0%AC%7C22%7C4%7C0%7C112%7C201%7C1%7C1">ДЕНЬ</span> <span class="b-wrd-expl" explain="%D0%A0%D0%9E%D0%96%D0%94%D0%95%D0%9D%D0%AC%D0%AF%7C28%7C169%7C0%7C1640%7C1%7C1%7C1">РОЖДЕНЬЯ</span> <span class="b-wrd-expl" explain="%D0%9C%D0%98%D0%9A%D0%90%7C185%7C5688%7C0%7C60%7C1%7C1%7C1">МИКА</span> <br><br>  <span class="b-wrd-expl" explain="%D0%9F%D0%B5%CC%80%D1%80%D0%B2%D0%B0%D1%8F%7C893%7C77%7C0%7C814%7C815%7C1%7C1">Пе&#768;рвая</span> <span class="b-wrd-expl" explain="%D0%BA%D0%BD%D0%B8%CC%80%D0%B3%D0%B0%7C47%7C14%7C0%7C322%7C323%7C1%7C1">кни&#768;га</span> <span class="b-wrd-expl" explain="%D0%93%D0%B8%D0%BF%D0%B5%D1%80%D0%B1%D0%BE%D1%80%D0%B5%CC%80%D1%8F%7C47%7C1150%7C0%7C1%7C1%7C1%7C1">Гиперборе&#768;я</span><br> <span class="b-wrd-expl" explain="%D0%92%D1%8B%CC%80%D1%88%D0%BB%D0%B0%7C661%7C39%7C0%7C39%7C1%7C1%7C1">Вы&#768;шла</span> <span class="b-wrd-expl" explain="%D0%BD%D0%B0%7C13%7C5%7C0%7C1%7C1%7C1%7C1">на</span> <span class="b-wrd-expl" explain="%D1%81%D0%B2%D0%B5%CC%80%D1%82%7C22%7C22%7C0%7C462%7C463%7C1%7C1">све&#768;т</span>, <span class="b-wrd-expl" explain="%D0%B7%D0%B0%7C13%7C23%7C0%7C1%7C1%7C1%7C1">за</span> <span class="b-wrd-expl" explain="%D1%81%D0%B5%D0%B1%D1%8F%CC%80%7C4%7C5%7C0%7C6%7C1%7C1%7C1">себя&#768;</span> <span class="b-wrd-expl" explain="%D0%BD%D0%B5%7C24%7C5%7C0%7C1%7C1%7C1%7C1">не</span> <span class="b-wrd-expl" explain="%D0%BA%D1%80%D0%B0%D1%81%D0%BD%D0%B5%CC%80%D1%8F%7C110%7C21%7C0%7C436%7C1%7C1%7C1">красне&#768;я</span>, <br> <span class="b-wrd-expl" explain="%D0%95%CC%80%D1%81%D0%BB%D0%B8%7C8%7C18%7C0%7C1%7C1%7C1%7C1">Е&#768;сли</span> <span class="b-wrd-expl" explain="%D0%B8%7C8%7C19%7C0%7C1%7C1%7C1%7C1">и</span> <span class="b-wrd-expl" explain="%D0%B1%D1%83%CC%80%D0%B4%D0%B5%D1%82%7C405%7C147%7C0%7C77%7C78%7C1%7C1">бу&#768;дет</span> <span class="b-wrd-expl" explain="%D0%BA%D1%80%D0%B0%D1%81%D0%BD%D0%B5%CC%80%D1%82%D1%8C%7C98%7C19%7C0%7C436%7C1%7C1%7C1">красне&#768;ть</span> <span class="b-wrd-expl" explain="%D0%B2%D1%82%D0%BE%D1%80%D0%B0%CC%80%D1%8F%7C994%7C21%7C0%7C269%7C780%7C1%7C1">втора&#768;я</span>, <br> <span class="b-wrd-expl" explain="%D0%A2%D0%BE%CC%80%7C8%7C18%7C0%7C1%7C1%7C1%7C1">То&#768;</span> <span class="b-wrd-expl" explain="%D0%BA%D0%B0%D0%BA%7C8%7C19%7C0%7C1%7C1%7C1%7C1">как</span> <span class="b-wrd-expl" explain="%D0%90%D0%B2%D1%80%D0%BE%CC%80%D1%80%D0%B0%7C45%7C4%7C0%7C60%7C1%7C1%7C1">Авро&#768;ра</span> <span class="b-wrd-expl" explain="%D0%BC%D0%BE%D0%BB%D0%BE%D0%B4%D0%B0%CC%80%D1%8F%7C145%7C31%7C0%7C673%7C673%7C1%7C1">молода&#768;я</span>, <br> <span class="b-wrd-expl" explain="%D0%9A%D1%80%D0%B0%CC%80%D1%81%D0%BD%D1%8B%D0%BC%D0%B8%7C117%7C43%7C0%7C102%7C619%7C1%7C1">Кра&#768;сными</span> <span class="b-wrd-expl" explain="%D0%B1%D1%83%CC%80%D0%BA%D0%B2%D0%B0%D0%BC%D0%B8%7C50%7C49%7C0%7C3289%7C319%7C1%7C1">бу&#768;квами</span> <span class="b-wrd-expl" explain="%D0%BF%D0%BB%D0%B0%D0%BC%D0%B5%D0%BD%D0%B5%CC%80%D1%8F%7C110%7C21%7C0%7C1%7C1%7C1%7C1">пламене&#768;я</span>, <br> <span class="b-wrd-expl" explain="%D0%92%D0%B8%CC%80%D0%B4%D0%BE%D0%BC%7C7%7C18%7C0%7C268%7C2236%7C1%7C1">Ви&#768;дом</span> <span class="b-wrd-expl" explain="%D0%BF%D1%80%D0%B5%D0%BB%D0%B5%CC%80%D1%81%D1%82%D0%BD%D1%8B%D0%BC%7C6%7C14%7C0%7C468%7C1%7C1%7C1">преле&#768;стным</span> <span class="b-wrd-expl" explain="%D1%81%D0%B5%D1%80%D0%B4%D1%86%D0%B0%CC%80%7C28%7C9%7C0%7C315%7C316%7C1%7C1">сердца&#768;</span> <span class="b-wrd-expl" explain="%D0%BF%D0%BB%D0%B5%D0%BD%D1%8F%D1%8F%CC%80%7C31%7C12%7C0%7C280%7C1%7C1%7C1">пленяя&#768;</span>.  <br><span class="doc">[Н. С. Гумилев. В день рожденья Мика (1918)]</span> <span class="off"> [омонимия не снята] </span> </li></li></ul></p></div><div class="footer"><footer xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:x="http://www.yandex.ru/xscript">
+    <p>Поиск осуществлен системой <a href="http://company.yandex.ru/technology/server/">Яндекс.Сервер</a></p>
+    <p>При цитировании примеров просим ссылаться на Национальный корпус русского языка</p>
+  </footer></div></body></html>
