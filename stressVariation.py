@@ -1,3 +1,5 @@
+action = 0 # to create tsv files for manual annotation, set action to 0; to estimate variation, set action to 1
+
 import html, re, os, pandas as pd, csv, random, statistics
 from transliterate import translit
 from collections import Counter
@@ -42,22 +44,21 @@ def atsToStresses(w):
                 stressed.append(syllableCount)
     return tuple(stressed)
 
-# load all poems from texts and meta folders
-poems = {int(x[:-4]): Poem(x[:-4]) for x in os.listdir('texts')}
-
-# remove all poems whose meter ('Метр') is not among the codes for accentual-syllabic meters
-for x in list(poems.keys()):
-    if poems[x].metadata['Метр'] not in ['Х', 'Я', 'Д', 'Аф', 'Ан']:
-        poems.pop(x)
-
 # make a corpus from individual poems and convert it to a Pandas dataframe
 def loadCorpus():
+    # load all poems from texts and meta folders
+    poems = {int(x[:-4]): Poem(x[:-4]) for x in os.listdir('texts')}
+    # remove all poems whose meter ('Метр') is not among the codes for accentual-syllabic meters
+    for x in list(poems.keys()):
+        if poems[x].metadata['Метр'] not in ['Х', 'Я', 'Д', 'Аф', 'Ан']:
+            poems.pop(x)
     columnNames = ['poem_id', 'author', 'token_id', 'start_position', 'token', 'stressed']
     corpus_list = []
     for poem_id in poems:
         corpus_list.extend([[poem_id, poems[poem_id].metadata['Автор'], i, t[1], t[0], atsToStresses(t[0])] for i, t in enumerate(poems[poem_id].accented_tokens)])
     corpus_df = pd.DataFrame(corpus_list,columns=columnNames)
     corpus_df['token_no_stress'] = [re.sub('@', '', x) for x in corpus_df['token']]
+    return (corpus_df, poems)
 
 # for a given subcorpus, find all word types with stress variation,
 # i.e. word types represented by tokens with incompatible stress patterns.
@@ -92,8 +93,10 @@ def extractTypesWithVariation(corpus):
     return types_with_variation
 
 
-#for
-def extractVariationForManualCheck):
+# for each author in the sample, create a tsv file for manual annotation
+# of possible cases of stress variation
+
+def extractVariationForManualCheck():
     stats_by_author = open('author_subcorpus_sizes.txt', 'w', encoding='utf-8')
     authors = pd.unique(corpus_df['author'])
     for author in authors:
@@ -128,6 +131,7 @@ def extractVariationForManualCheck):
                     snippet_id += 1
     stats_by_author.close()
 
+# load subcorpus sizes stored in a txt file
 def loadSubcorpusSizes(filename):
     subcorpus_sizes = {}
     with open(filename, 'r', encoding='utf-8') as f:
@@ -136,6 +140,7 @@ def loadSubcorpusSizes(filename):
             subcorpus_sizes[name] = int(size)
     return subcorpus_sizes
 
+# estimate the number of word types with variable stress observable in a sample of 10,000 tokens
 def estimateVariation():
     subcorpus_sizes = loadSubcorpusSizes('author_subcorpus_sizes.txt')
     for x in os.listdir('variationByAuthor-checked'):
@@ -149,7 +154,7 @@ def estimateVariation():
                         variable_stress_tokens[row[2]] = []
                     variable_stress_tokens[row[2]].append(int(row[-2]))
         estimate = 0
-        sample_size = 5000
+        sample_size = 10000
         variable_stress_types = 0
         for word_type in variable_stress_tokens:
             variant_forms_frequencies = Counter(variable_stress_tokens[word_type])
@@ -157,6 +162,10 @@ def estimateVariation():
             if len(variant_forms) == 2:
                 estimate += (1-poisson.pmf(0, variant_forms_frequencies[variant_forms[0]]*sample_size/subcorpus_sizes[author])) * (1-poisson.pmf(0, variant_forms_frequencies[variant_forms[1]]*sample_size/subcorpus_sizes[author]))
                 variable_stress_types += 1
-        print(author, translit(author, "ru", reversed=True), variable_stress_types, round(estimate, 3), sep='\t')       
+        print(author, translit(author, "ru", reversed=True), subcorpus_sizes[author], variable_stress_types, round(estimate, 3), sep='\t')       
 
-corpus_df = loadCorpus()
+if action == 0:
+    corpus_df, poems = loadCorpus()
+    extractVariationForManualCheck()
+elif action == 1:
+    estimateVariation()
