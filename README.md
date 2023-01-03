@@ -1,7 +1,7 @@
 # russianStressVariation-Jan2023
 
 ## Introduction
-Russian stress is a notoriously complex phenomenon. Stress placement is very difficult to acquire for L2 learners, but there is also a substantial amount of variation in stress placement among L1 speakers. Russian exhibits not only inter-speaker variation (e.g., some speakers say _vésely_ 'merry (plural)', and some speakers say _veselý_), but also intra-speaker variation (the same speaker can sometimes say _vésely_ and sometimes _veselý_)
+Russian stress is a notoriously complex phenomenon. Stress placement is very difficult to acquire for L2 learners, but there is also a substantial amount of variation in stress placement among L1 speakers. Russian exhibits not only inter-speaker variation (e.g., some speakers say _vésely_ 'cheerful (plural)', and some speakers say _veselý_), but also intra-speaker variation (the same speaker can sometimes say _vésely_ and sometimes _veselý_)
 
 In Russian accentual-syllabic poetry, stresses of polysyllabic words are aligned with strong verse positions, i.e. stress of a polysyllabic word can only fall on a strong (S) but not a weak (W) position. For this reason, poetry is a valuable source of information on stress placement in Russian of the last 250 years and can be used for studying diachronic change and variation in the domain of stress placement.
 
@@ -34,17 +34,17 @@ For more details, see: Piperski, A., and A. Kukhto. “Inferring Stress Placemen
 
 ## Repository contents
 
-**/texts**: texts by four poets from the Poetic subcorpus of the Russian National Corpus (https://ruscorpora.ru/new/search-poetic.html). (Please do not redistribute these files!)
+**/texts**: texts by four poets (Vladimir Narbut = В. И. Нарбут, Mikhail Zenkevich = М. А. Зенкевич, Nikolay Gumilev = Н. С. Гумилев, Sergey Gorodetsky = С. М. Городецкий) from the Poetic subcorpus of the Russian National Corpus (https://ruscorpora.ru/new/search-poetic.html). (Please do not redistribute these files!). 
 
 **/meta**: metadata for these texts. (Please do not redistribute these files!)
 
-**stressVariation.py**: a Python script to extract concordance lines for all tokens that might exhibit stress variation into a separate TSV file for each author and put these files into **/variationByAuthor** folder. After manual filtering, these files are put into **/variationByAuthor-checked**, and after that the expected number of word types with variable stress observed in a sample of 10,000 tokens is calculated for each author.
+**stressVariation.py**: a Python script to extract concordance lines for all tokens that might exhibit stress variation into a separate TSV file for each author and put these files into **/variationByAuthor** folder. After manual filtering, these files are put into **/variationByAuthor-checked**, and after that the expected number of word types with variable stress in a sample of 10,000 tokens is calculated for each author.
 
 ## Results
 
 | Author | Corpus size | Types with <br> variable stress <br> (total) | Types with <br> variable stress <br> (per 10,000 tokens) |
 | :--- | :--- | :--- | :--- |
-| V. I. Narbut | 28,324 | 14 | 1.711 |
-| M. A. Zenkevich | 26,220 | 11 | 2.402 |
-| N. S. Gumilev | 56,992 | 57 | 3.554 |
-| S. M. Gorodetskij | 26,653 | 14 | 2.313 |
+| Narbut | 28,324 | 14 | 1.711 |
+| Zenkevich | 26,220 | 11 | 2.402 |
+| Gumilev | 56,992 | 57 | 3.554 |
+| Gorodetsky | 26,653 | 14 | 2.313 |
