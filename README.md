@@ -34,7 +34,7 @@ For more details, see: Piperski, A., and A. Kukhto. “Inferring Stress Placemen
 
 ## Repository contents
 
-**/texts**: texts by four poets from the Poetic subcorpus of the Russian National Corpus (https://ruscorpora.ru/new/search-poetic.html). (Please do not redistribute these files!)
+**/texts**: texts by four poets (Vladimir Narbut = В. И. Нарбут, Mikhail Zenkevich = М. А. Зенкевич, Nikolay Gumilev = Н. С. Гумилев, Sergey Gorodetsky = С. М. Городецкий) from the Poetic subcorpus of the Russian National Corpus (https://ruscorpora.ru/new/search-poetic.html). (Please do not redistribute these files!). 
 
 **/meta**: metadata for these texts. (Please do not redistribute these files!)
 
@@ -44,7 +44,7 @@ For more details, see: Piperski, A., and A. Kukhto. “Inferring Stress Placemen
 
 | Author | Corpus size | Types with <br> variable stress <br> (total) | Types with <br> variable stress <br> (per 10,000 tokens) |
 | :--- | :--- | :--- | :--- |
-| V. I. Narbut | 28,324 | 14 | 1.711 |
-| M. A. Zenkevich | 26,220 | 11 | 2.402 |
-| N. S. Gumilev | 56,992 | 57 | 3.554 |
-| S. M. Gorodetskij | 26,653 | 14 | 2.313 |
+| Narbut | 28,324 | 14 | 1.711 |
+| Zenkevich | 26,220 | 11 | 2.402 |
+| Gumilev | 56,992 | 57 | 3.554 |
+| Gorodetsky | 26,653 | 14 | 2.313 |
