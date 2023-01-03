@@ -38,7 +38,7 @@ For more details, see: Piperski, A., and A. Kukhto. “Inferring Stress Placemen
 
 **/meta**: metadata for these texts. (Please do not redistribute these files!)
 
-**stressVariation.py**: a Python script to extract concordance lines for all tokens that might exhibit stress variation into a separate TSV file for each author and put these files into **/variationByAuthor** folder. After manual filtering, these files are put into **/variationByAuthor-checked**, and after that the expected number of word types with variable stress observed in a sample of 10,000 tokens is calculated for each author.
+**stressVariation.py**: a Python script to extract concordance lines for all tokens that might exhibit stress variation into a separate TSV file for each author and put these files into **/variationByAuthor** folder. After manual filtering, these files are put into **/variationByAuthor-checked**, and after that the expected number of word types with variable stress in a sample of 10,000 tokens is calculated for each author.
 
 ## Results
 
